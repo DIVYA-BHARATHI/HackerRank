@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.time.LocalDate;
 import java.util.Calendar;
 public class Solution {
@@ -35,3 +36,12 @@ public class Solution {
 
         return dayOfWeek.toUpperCase();
     }
+        public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String month = in.next();
+        String day = in.next();
+        String year = in.next();
+        
+        System.out.println(getDay(day, month, year));
+    }
+}
